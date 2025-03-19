@@ -235,35 +235,6 @@ img {
     margin-right: 6%;
 }
 
-.clips-destacados {
-    flex: 1;
-    background-color: variables.$background-do;
-    padding: variables.$padding-large;
-    border-radius: variables.$border-radius;
-    box-shadow: variables.$box-shadow;
-}
-
-.clips-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-    gap: 15px;
-    padding: variables.$padding-base;
-}
-
-.clip-card {
-    background-color: variables.$background-dc;
-    padding: variables.$padding-base;
-    border-radius: variables.$border-radius;
-    text-align: center;
-    box-shadow: variables.$box-shadow;
-}
-
-.clip-card img {
-    width: 100%;
-    border-radius: variables.$border-radius;
-}
-
 .ranking-episodios {
     flex: 1;
     background-color: variables.$background-do;
