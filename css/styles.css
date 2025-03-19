@@ -92,9 +92,9 @@ img {
 
 .anuncios-especiales {
   position: fixed;
-  bottom: 50px;
+  bottom: 20px;
   left: 1%;
-  width: 25px;
+  width: 200px;
   background: rgba(255, 255, 255, 0.9);
   padding: 15px;
   border-radius: 10px;
