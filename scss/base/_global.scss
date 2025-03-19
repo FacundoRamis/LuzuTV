@@ -8,16 +8,7 @@ body {
     background: url('../../img/index/background.webp') no-repeat center center fixed;
     background-size: cover;
     position: relative;
-}
-
-.background-overlay {
-    position: absolute;
-    top: 100px;
-    left: 2%;
-    width: calc(100% - 75px);
-    height: calc(100% - 100px);
-    background-color: variables.$background-overlay;
-    z-index: 1;
+    overflow-x: hidden;
 }
 
 .content {
