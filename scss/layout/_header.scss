@@ -1,0 +1,61 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+header {
+    background-color: black;
+    padding: variables.$padding-base variables.$padding-large;
+    box-shadow: 0 4px 8px variables.$shadow-color;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    height: 100px;
+    margin-left: auto;
+}
+
+nav {
+    position: relative;
+    z-index: 1001;
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-left: variables.$padding-large;
+            position: relative;
+            padding-right: variables.$padding-base;
+
+            &:not(:last-child)::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1px;
+                height: 20px;
+                background-color: variables.$border-color;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: variables.$text-color;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: variables.$hover-color !important;
+            }
+        }
+    }
+}
+
+.navbar {
+    padding: variables.$padding-base variables.$padding-large;
+}
+
+.navbar-brand img {
+    height: 80px;
+}

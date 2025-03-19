@@ -1,0 +1,44 @@
+@use '../base/mixins';
+
+@include mixins.responsive(1024px) {
+    .programas-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .podcast-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .titulo-seccion {
+        margin: 0 50px;
+    }
+}
+
+@include mixins.responsive(768px) {
+    .programas-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .podcast-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .botones-inicio {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@include mixins.responsive(480px) {
+    .titulo {
+        font-size: 24px;
+    }
+
+    .botones-inicio {
+        gap: 10px;
+    }
+
+    .podcast-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
