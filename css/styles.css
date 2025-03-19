@@ -4,18 +4,7 @@ body {
   background: url("../../img/index/background.webp") no-repeat center center fixed;
   background-size: cover;
   position: relative;
-  overflow-x:hidden;
-}
-
-.background-overlay {
-  position: absolute;
-  top: 100px;
-  left: 10%;
-  width: calc(100% - 75px);
-  height: calc(100% - 100px);
-  overflow-x:hidden;
-  background-color: rgba(255, 255, 255, 0.7);
-  z-index: -1000;
+  overflow-x: hidden;
 }
 
 .content {
