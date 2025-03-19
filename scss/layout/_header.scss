@@ -5,8 +5,9 @@ header {
     background-color: black;
     padding: variables.$padding-base variables.$padding-large;
     box-shadow: 0 4px 8px variables.$shadow-color;
-    position: relative;
-    z-index: 1000;
+    position: absolute;
+    z-index: 1;
+    overflow-x: hidden;
 }
 
 .logo {

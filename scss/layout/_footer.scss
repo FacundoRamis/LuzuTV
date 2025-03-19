@@ -6,4 +6,6 @@ footer {
     text-align: center;
     padding: variables.$padding-base 0;
     margin-top: variables.$padding-large;
+    overflow-x: hidden;
+    z-index: -10;
 }
