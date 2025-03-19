@@ -5,7 +5,6 @@ body {
   background-size: cover;
   position: relative;
   overflow-x: hidden;
-  z-index:1;
 }
 
 .content {
@@ -19,7 +18,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   margin-left: 70px;
   padding-bottom: 0px;
 }
