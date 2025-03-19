@@ -1,0 +1,41 @@
+// Mixin para centrar elementos flexibles
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Mixin para sombra estándar
+@mixin box-shadow {
+    box-shadow: 0 4px 8px variables.$shadow-color;
+}
+
+// Mixin para imágenes responsivas
+@mixin responsive-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+// Mixin para botones redondeados
+@mixin button-style {
+    display: inline-block;
+    padding: 8px 15px;
+    background: variables.$primary-color;
+    color: variables.$text-color;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+
+    &:hover {
+        background: darken(variables.$primary-color, 10%);
+    }
+}
+
+// Mixin para media queries responsivos
+@mixin responsive($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
