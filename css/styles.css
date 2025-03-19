@@ -10,7 +10,7 @@ body {
 .background-overlay {
   position: absolute;
   top: 100px;
-  left: 2%;
+  left: 10%;
   width: calc(100% - 75px);
   height: calc(100% - 100px);
   overflow-x:hidden;
