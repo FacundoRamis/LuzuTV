@@ -1,0 +1,68 @@
+// Archivo: _buttons.scss
+
+@use '../base/variables';
+@use '../base/mixins';
+
+.botones-inicio {
+    display: flex;
+    justify-content: center;
+    gap: variables.$gap-large;
+
+    @media (max-width: variables.$breakpoint-tablet) {
+        flex-direction: column;
+        gap: variables.$gap-small;
+    }
+}
+
+.btn {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    @include mixins.flex-center;
+
+    img {
+        position: absolute;
+        width: 150%;
+        height: 70%;
+        border-radius: variables.$btn-radius;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+
+        &.normal {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        &.hover {
+            opacity: 0;
+            transform: scale(1);
+        }
+    }
+
+    &:hover {
+        img.normal {
+            opacity: 0;
+            transform: scale(1.1);
+        }
+
+        img.hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.btn-ver {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #ff0000;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-ver:hover {
+    background: #cc0000;
+}
